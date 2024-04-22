@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="personalWebpage.css">
+    <script src="personalWebpage.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brett Hoey</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p >My name is Brett Hoey, and I am an aspiring software engineer.
+                I am a member of Pennslyvania FBLA, and placed within the top ten
+                in the state in April of 2024.
+            </p>
+            <p>Github: <a href="https://github.com/BrettHoey">Brett Hoey</a></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bretthoey23@gmail.com">bretthoey23@gmail.com</a></p>
+            <p>Phone: 570-229-7462</p>
+            <div class="container">
+                <h3>Send an email here</h3>
+                <form id="contact-form" method="post" action="sendmail.php">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+        </section>
+        <h4>Languages used on this page</h4>
+        <img src="html.png" id="htmlIcon" alt="HTML">
+        <img src="css.png" id="cssIcon" alt="CSS">
+        <img src="js.png" id="jsIcon" alt="JavaScript">
+        <h4>Other Languages not used in this site</h4>
+        <img src="c-sharp-c.228x256.png" id="csharpicon" alt="C#">
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
